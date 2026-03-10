@@ -4,31 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TaskMaster Pro</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  
+
+  <link rel="icon" type="image/x-icon" href="../A4.4%20Ejercicio/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <style>
-    #title { background-color: #ff4c68; }
-    .nombre-app { font-family: 'Ubuntu', sans-serif; }
-    .texto-titulo { font-family: 'Montserrat', sans-serif; }
-    .fondo-cabecera { padding: 3% 15%; }
+    #title {
+      background-color: #ff4c68;
+    }
+
+    .container-fluid {
+      padding: 3% 15%;
+    }
+
+    .nombre {
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .titulo {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .texto {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .imagen {
+      text-align: center;
+      padding-top: 2rem;
+    }
+
+    .imagen img {
+      max-width: 60%;
+      height: auto;
+    }
   </style>
 </head>
 
 <body>
-  <div class="container-fluid fondo-cabecera">
-    <header id="title">
+  <header id="title">
+    <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-          <a class="navbar-brand fw-bold fs-3 nombre-app" href="index.html">
+          <a class="navbar-brand fw-bold fs-3 nombre" href="index.html">
             TaskMaster Pro
           </a>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                   aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
@@ -45,22 +73,19 @@
         </div>
       </nav>
 
-      <div class="row">
-        <div class="col-lg-6 col-12">
-          <div class="texto-principal text-white text-center text-lg-start py-5 px-4">
-            <h1 class="texto-titulo">Organiza tu vida</h1>
-            <button type="button" class="btn btn-light btn-lg me-3 mb-3">App Store</button>
-            <button type="button" class="btn btn-outline-light btn-lg">Google Play</button>
-          </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-12 texto text-white">
+          <h1 class="titulo">Organiza tu vida</h1>
+          <button type="button" class="btn btn-dark btn-lg me-3 mb-3">Descargar</button>
+          <button type="button" class="btn btn-outline-light btn-lg mb-3">Más información</button>
         </div>
-        <div class="col-lg-6 col-12">
-          <div class="zona-imagen">
-            <img src="imagen-app.jpg" alt="TaskMaster Pro" class="img-fluid">
-          </div>
+
+        <div class="col-lg-6 col-12 imagen">
+          <img src="imagen-app.jpg" alt="Imagen de la aplicación">
         </div>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 
   <main class="container">
     <div class="row">
